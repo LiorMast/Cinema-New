@@ -72,5 +72,33 @@ namespace eShop
             Checkout checkout = new Checkout(activeuser);
             checkout.ShowDialog();
         }
+
+        private void btnCartRemove_MouseEnter(object sender, EventArgs e)
+        {
+            btnCartRemove.BackColor = Color.White;
+            btnCartRemove.ForeColor = Color.Black;
+
+        }
+
+        private void btnCartRemove_MouseLeave(object sender, EventArgs e)
+        {
+            btnCartRemove.BackColor = Color.Black;
+            btnCartRemove.ForeColor = Color.White;
+
+        }
+
+        private void btnCartCheckout_MouseEnter(object sender, EventArgs e)
+        {
+            btnCartCheckout.BackColor = Color.White;
+            btnCartCheckout.ForeColor = Color.Black;
+
+        }
+
+        private void btnCartCheckout_MouseLeave(object sender, EventArgs e)
+        {
+            btnCartCheckout.BackColor = Color.Black;
+            btnCartCheckout.ForeColor = Color.White;
+
+        }
     }
 }

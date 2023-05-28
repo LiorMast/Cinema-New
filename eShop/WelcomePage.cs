@@ -73,5 +73,17 @@ namespace Cinema
             else if (lblTitle.ForeColor == Color.HotPink) lblTitle.ForeColor = Color.Cyan;
             else if (lblTitle.ForeColor == Color.Cyan) lblTitle.ForeColor = Color.Gold;
         }
+
+        private void btnCreateAccount_MouseEnter(object sender, EventArgs e)
+        {
+            btnCreateAccount.BackColor = Color.White;
+            btnCreateAccount.ForeColor = Color.Black;
+        }
+
+        private void btnCreateAccount_MouseLeave(object sender, EventArgs e)
+        {
+            btnCreateAccount.BackColor = Color.Black;
+            btnCreateAccount.ForeColor = Color.White;
+        }
     }
 }

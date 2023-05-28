@@ -87,6 +87,8 @@
             this.btnShowInfo.Text = "Show Movie Info";
             this.btnShowInfo.UseVisualStyleBackColor = true;
             this.btnShowInfo.Click += new System.EventHandler(this.btnShowInfo_Click);
+            this.btnShowInfo.MouseEnter += new System.EventHandler(this.btnShowInfo_MouseEnter);
+            this.btnShowInfo.MouseLeave += new System.EventHandler(this.btnShowInfo_MouseLeave);
             // 
             // lblUsrInfo
             // 
@@ -111,6 +113,9 @@
             this.btnChooseSeats.Text = "Choose Seats";
             this.btnChooseSeats.UseVisualStyleBackColor = true;
             this.btnChooseSeats.Click += new System.EventHandler(this.btnAddToCart_Click);
+            this.btnChooseSeats.MouseEnter += new System.EventHandler(this.btnChooseSeats_MouseEnter);
+            this.btnChooseSeats.MouseLeave += new System.EventHandler(this.btnChooseSeats_MouseLeave);
+            this.btnChooseSeats.MouseHover += new System.EventHandler(this.btnChooseSeats_MouseHover);
             // 
             // btnViewCart
             // 
@@ -122,6 +127,8 @@
             this.btnViewCart.Text = "View Cart";
             this.btnViewCart.UseVisualStyleBackColor = true;
             this.btnViewCart.Click += new System.EventHandler(this.btnViewCart_Click);
+            this.btnViewCart.MouseEnter += new System.EventHandler(this.btnViewCart_MouseEnter);
+            this.btnViewCart.MouseLeave += new System.EventHandler(this.btnViewCart_MouseLeave);
             // 
             // cmbScreeningTIme
             // 

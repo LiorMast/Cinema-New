@@ -64,6 +64,8 @@
             this.btnCartRemove.Text = "Remove";
             this.btnCartRemove.UseVisualStyleBackColor = false;
             this.btnCartRemove.Click += new System.EventHandler(this.btnCartRemove_Click);
+            this.btnCartRemove.MouseEnter += new System.EventHandler(this.btnCartRemove_MouseEnter);
+            this.btnCartRemove.MouseLeave += new System.EventHandler(this.btnCartRemove_MouseLeave);
             // 
             // btnCartCheckout
             // 
@@ -75,6 +77,8 @@
             this.btnCartCheckout.Text = "Checkout";
             this.btnCartCheckout.UseVisualStyleBackColor = false;
             this.btnCartCheckout.Click += new System.EventHandler(this.btnCartCheckout_Click);
+            this.btnCartCheckout.MouseEnter += new System.EventHandler(this.btnCartCheckout_MouseEnter);
+            this.btnCartCheckout.MouseLeave += new System.EventHandler(this.btnCartCheckout_MouseLeave);
             // 
             // CartInfo
             // 

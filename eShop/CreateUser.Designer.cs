@@ -109,6 +109,8 @@
             this.btnUsrCreate.Text = "Create";
             this.btnUsrCreate.UseVisualStyleBackColor = false;
             this.btnUsrCreate.Click += new System.EventHandler(this.btnUsrCreate_Click);
+            this.btnUsrCreate.MouseEnter += new System.EventHandler(this.btnUsrCreate_MouseEnter);
+            this.btnUsrCreate.MouseLeave += new System.EventHandler(this.btnUsrCreate_MouseLeave);
             // 
             // dtpBirthday
             // 

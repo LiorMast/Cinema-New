@@ -46,6 +46,8 @@
             this.btnCreateAccount.Text = "Create an Account";
             this.btnCreateAccount.UseVisualStyleBackColor = true;
             this.btnCreateAccount.Click += new System.EventHandler(this.btnCreateAccount_Click);
+            this.btnCreateAccount.MouseEnter += new System.EventHandler(this.btnCreateAccount_MouseEnter);
+            this.btnCreateAccount.MouseLeave += new System.EventHandler(this.btnCreateAccount_MouseLeave);
             // 
             // lblTitle
             // 

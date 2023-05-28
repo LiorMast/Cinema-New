@@ -133,5 +133,46 @@ namespace eShop
         {
 
         }
+
+        private void btnChooseSeats_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChooseSeats_MouseLeave(object sender, EventArgs e)
+        {
+            btnChooseSeats.BackColor = Color.Black;
+            btnChooseSeats.ForeColor = Color.White;
+        }
+
+        private void btnShowInfo_MouseEnter(object sender, EventArgs e)
+        {
+            btnShowInfo.BackColor = Color.White;
+            btnShowInfo.ForeColor = Color.Black;
+        }
+
+        private void btnShowInfo_MouseLeave(object sender, EventArgs e)
+        {
+            btnShowInfo.BackColor = Color.Black;
+            btnShowInfo.ForeColor = Color.White;
+        }
+
+        private void btnChooseSeats_MouseEnter(object sender, EventArgs e)
+        {
+            btnChooseSeats.BackColor = Color.White;
+            btnChooseSeats.ForeColor = Color.Black;
+        }
+
+        private void btnViewCart_MouseEnter(object sender, EventArgs e)
+        {
+            btnViewCart.BackColor = Color.White;
+            btnViewCart.ForeColor = Color.Black;
+        }
+
+        private void btnViewCart_MouseLeave(object sender, EventArgs e)
+        {
+            btnViewCart.BackColor = Color.Black;
+            btnViewCart.ForeColor = Color.White;
+        }
     }
 }

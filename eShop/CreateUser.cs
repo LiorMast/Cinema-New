@@ -48,5 +48,19 @@ namespace eShop
         {
             this.Text = "Create an account";
         }
+
+        private void btnUsrCreate_MouseEnter(object sender, EventArgs e)
+        {
+            btnUsrCreate.BackColor = Color.White;
+            btnUsrCreate.ForeColor = Color.Black;
+
+        }
+
+        private void btnUsrCreate_MouseLeave(object sender, EventArgs e)
+        {
+            btnUsrCreate.BackColor = Color.Black;
+            btnUsrCreate.ForeColor = Color.White;
+
+        }
     }
 }

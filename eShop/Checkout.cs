@@ -89,5 +89,19 @@ namespace eShop
                 MessageBox.Show("Incorrect Payment details!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnPay_MouseEnter(object sender, EventArgs e)
+        {
+            btnPay.BackColor = Color.White;
+            btnPay.ForeColor = Color.Black;
+
+        }
+
+        private void btnPay_MouseLeave(object sender, EventArgs e)
+        {
+            btnPay.BackColor = Color.Black;
+            btnPay.ForeColor = Color.White;
+
+        }
     }
 }
