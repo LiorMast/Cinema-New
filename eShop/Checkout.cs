@@ -82,6 +82,7 @@ namespace eShop
                 if(dialogResult == DialogResult.OK)
                 {
                     MessageBox.Show($"Purchase Complete!\nEnjoy Your Movie 😁", "Thank you!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    user.GetCart().ClearCart();
                 }
             }
             else
