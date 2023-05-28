@@ -1,0 +1,25 @@
+("The Shawshank Redemption", "Frank Darabont", 142, Drama, shawshank.jpg," In 1947, Andy Dufresne (Tim Robbins), a banker in Maine, is convicted of murdering his wife and her lover, a golf pro. Since the state of Maine has no death penalty, he is given two consecutive life sentences and sent to the notoriously harsh")
+
+("The Dark Knight", "Christopher Nolan", 152, Action, darkknight.jpg,"The plot follows the vigilante Batman, police lieutenant James Gordon, and district attorney Harvey Dent, who form an alliance to dismantle organized crime in Gotham City. Their efforts are derailed by the Joker, an anarchistic mastermind who seeks to test how far Batman will go to")
+
+("Inception", "Christopher Nolan", 148, SciFi, inception.jpg,"
+The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets. He is offered a chance to have his criminal history erased as payment for the implantation of another person's idea into a target's subconscious")
+
+("Pulp Fiction", "Quentin Tarantino", 154, Crime, pulp.jpg,"
+The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption")
+
+("The Godfather", "Francis Ford Coppola", 175, Drama, godfather.jpg,"
+It is the first installment in The Godfather trilogy, chronicling the Corleone family under patriarch Vito Corleone (Brando) from 1945 to 1955. It focuses on the transformation of his youngest son, Michael Corleone (Pacino), from reluctant family outsider to ruthless mafia boss")
+
+("The Avengers", "Joss Whedon", 143, SciFi, avengers.jpg,"
+Earth's Mightiest Heroes stand as the planet's first line of defense against the most powerful threats in the universe. The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City")
+
+("Interstellar","Christopher Nolan",169,SciFi,Interstellar.jpg,"When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans")
+
+("Forrest Gump","Robert Zemeckis",142,Drama,ForrestGump.jpg,"The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart")
+
+("Joker","Todd Phillips",122,Crime,Joker.jpg,"The rise of Arthur Fleck, from aspiring stand-up comedian and pariah to Gotham's clown prince and leader of the revolution")
+
+
+
+
