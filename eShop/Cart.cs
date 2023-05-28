@@ -92,6 +92,17 @@ namespace eShop
 
             return Math.Round(totalPrice,2);
         }
+
+        public override string ToString()
+        {
+            string output = "";
+            for (int i = 0; i < currentIndex; i++)
+            {
+                output += items[i].ToString() + "\n";
+            }
+            return "\nNumber of Items: " + GetItemCount() + "\n"+output + "\n\nTotal Price: " + GetTotalPrice();
+
+        }
     }
 
 }
