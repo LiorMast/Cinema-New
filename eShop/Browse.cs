@@ -17,6 +17,7 @@ namespace eShop
         private User activeUser;
         private MovieCollection movies = new MovieCollection();
         private Movie selectedMovie;
+        private SeatBooking seatBooking;
         private int featuredPicCounter = 1;
         private string[] picPaths;
         private string[] titles;
@@ -31,7 +32,10 @@ namespace eShop
             this.activeUser = activeUser;
         }
 
-        
+        public void ClearSeatBooking()
+        {
+            seatBooking = null;
+        }
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -93,7 +97,7 @@ namespace eShop
             //activeUser.GetCart().AddItem(t);
             //UpdateUserLabel();
 
-            SeatBooking seatBooking = new SeatBooking(selectedMovie, (Ticket.ScreeningTime)cmbScreeningTIme.SelectedIndex);
+            seatBooking = new SeatBooking(activeUser, selectedMovie, (Ticket.ScreeningTime)cmbScreeningTIme.SelectedIndex);
             seatBooking.ShowDialog();
             UpdateUserLabel();
         }

@@ -13,20 +13,27 @@ namespace Cinema
 {
     public partial class SeatBooking : Form
     {
+        User User;
         Movie movie;
         Ticket.ScreeningTime screeningTime;
         private Ticket[] tickets;
+        private List<Ticket> ticketList = new List<Ticket>();
+        private List<string> chairs = new List<string>();
+        private const int ticketPrice = 10;
 
         public SeatBooking()
         {
             InitializeComponent();
+            UpdateInfo();
         }
 
-        public SeatBooking(Movie movie, Ticket.ScreeningTime screeningTime) : this()
+        public SeatBooking(User user,Movie movie, Ticket.ScreeningTime screeningTime) : this()
         {
             this.movie = movie;
             this.screeningTime = screeningTime;
+            this.User = user;
             lblScreeningInfo.Text = $"Movie: {movie.GetTitle()}\nTime: {Ticket.ScreeningTimeToString(screeningTime)}";
+            lblPrice2.Text = $"{ticketPrice}";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -70,21 +77,27 @@ namespace Cinema
             }
         }
 
-        int countchairs = 0;
-        //string[] chairs = new string[pnlChairs.col]; 
-
         private void Lblchair_Click(object sender, EventArgs e)
         {
             Label lblchair = sender as Label;
             if(lblchair.BackColor==Color.Maroon)
             {
                 lblchair.BackColor = Color.SkyBlue;
+                chairs.Add(lblchair.Text);
+                UpdateInfo();
             }
             else if(lblchair.BackColor==Color.SkyBlue)
             {
                 lblchair.BackColor = Color.Maroon;
+                chairs.Remove(lblchair.Text);
+                UpdateInfo();
             }
             
+        }
+
+        private void UpdateInfo()
+        {
+            try { lblTotalPriceSeats2.Text = $"{chairs.Count * ticketPrice}"; } catch { lblTotalPriceSeats2.Text = "0"; }
         }
 
         private void pnlChairs_Paint(object sender, PaintEventArgs e)
@@ -94,7 +107,27 @@ namespace Cinema
 
         private void btnPurchase_Click(object sender, EventArgs e)
         {
+            if (chairs.Count==0)
+            {
+                MessageBox.Show("No seats selected!", "You must choose a seat",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                foreach (string seat in chairs)
+                {
+                    ticketList.Add(new Ticket(movie, seat, screeningTime, ticketPrice));
+                }
+                foreach (Ticket ticket in ticketList)
+                {
+                    User.GetCart().AddItem(ticket);
+                }
+                Close();
+            }
+        }
 
+        private void btnCancelOrder_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

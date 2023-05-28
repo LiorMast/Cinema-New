@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblScreeningInfo = new System.Windows.Forms.Label();
             this.lblTicketBooking = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnPurchase = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.grpChooseSeats = new System.Windows.Forms.GroupBox();
             this.pnlChairs = new System.Windows.Forms.TableLayoutPanel();
-            this.lblScreeningInfo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -56,6 +56,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(971, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // lblScreeningInfo
+            // 
+            this.lblScreeningInfo.AutoSize = true;
+            this.lblScreeningInfo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblScreeningInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lblScreeningInfo.ForeColor = System.Drawing.Color.White;
+            this.lblScreeningInfo.Location = new System.Drawing.Point(917, 0);
+            this.lblScreeningInfo.Name = "lblScreeningInfo";
+            this.lblScreeningInfo.Size = new System.Drawing.Size(54, 20);
+            this.lblScreeningInfo.TabIndex = 5;
+            this.lblScreeningInfo.Text = "Movie:";
+            this.lblScreeningInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTicketBooking
             // 
@@ -106,8 +119,9 @@
             this.btnCancelOrder.Name = "btnCancelOrder";
             this.btnCancelOrder.Size = new System.Drawing.Size(139, 54);
             this.btnCancelOrder.TabIndex = 2;
-            this.btnCancelOrder.Text = "Cancell";
+            this.btnCancelOrder.Text = "Cancel";
             this.btnCancelOrder.UseVisualStyleBackColor = false;
+            this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
             // 
             // lblTotalPriceSeats2
             // 
@@ -125,10 +139,11 @@
             this.lblPrice2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.lblPrice2.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPrice2.Location = new System.Drawing.Point(107, 20);
+            this.lblPrice2.Location = new System.Drawing.Point(243, 20);
             this.lblPrice2.Name = "lblPrice2";
             this.lblPrice2.Size = new System.Drawing.Size(442, 36);
             this.lblPrice2.TabIndex = 2;
+            this.lblPrice2.Text = "10";
             this.lblPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblTotalPriceSeats
@@ -139,7 +154,7 @@
             this.lblTotalPriceSeats.Name = "lblTotalPriceSeats";
             this.lblTotalPriceSeats.Size = new System.Drawing.Size(243, 36);
             this.lblTotalPriceSeats.TabIndex = 1;
-            this.lblTotalPriceSeats.Text = "Total Price Seats:";
+            this.lblTotalPriceSeats.Text = "Total Price For Seats:";
             this.lblTotalPriceSeats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblPrice
@@ -148,9 +163,9 @@
             this.lblPrice.ForeColor = System.Drawing.SystemColors.Control;
             this.lblPrice.Location = new System.Drawing.Point(12, 20);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(89, 36);
+            this.lblPrice.Size = new System.Drawing.Size(185, 36);
             this.lblPrice.TabIndex = 0;
-            this.lblPrice.Text = "Price:";
+            this.lblPrice.Text = "Price Per Seat:";
             this.lblPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
@@ -202,19 +217,6 @@
             this.pnlChairs.Size = new System.Drawing.Size(965, 363);
             this.pnlChairs.TabIndex = 0;
             this.pnlChairs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChairs_Paint);
-            // 
-            // lblScreeningInfo
-            // 
-            this.lblScreeningInfo.AutoSize = true;
-            this.lblScreeningInfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblScreeningInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblScreeningInfo.ForeColor = System.Drawing.Color.White;
-            this.lblScreeningInfo.Location = new System.Drawing.Point(917, 0);
-            this.lblScreeningInfo.Name = "lblScreeningInfo";
-            this.lblScreeningInfo.Size = new System.Drawing.Size(54, 20);
-            this.lblScreeningInfo.TabIndex = 5;
-            this.lblScreeningInfo.Text = "Movie:";
-            this.lblScreeningInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SeatBooking
             // 
