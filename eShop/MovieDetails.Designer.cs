@@ -79,8 +79,10 @@
             // 
             // rtbDescription
             // 
+            this.rtbDescription.BackColor = System.Drawing.Color.Black;
             this.rtbDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbDescription.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbDescription.ForeColor = System.Drawing.Color.White;
             this.rtbDescription.Location = new System.Drawing.Point(330, 319);
             this.rtbDescription.Name = "rtbDescription";
             this.rtbDescription.ReadOnly = true;
@@ -94,12 +96,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(852, 566);
             this.Controls.Add(this.rtbDescription);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblMovieDetails);
             this.Controls.Add(this.lblMovieTitle);
             this.Controls.Add(this.picPoster);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "MovieDetails";
             this.Text = "MovieDetails";
             this.Load += new System.EventHandler(this.MovieDetails_Load);

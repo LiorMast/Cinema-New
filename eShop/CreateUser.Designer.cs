@@ -99,13 +99,15 @@
             // 
             // btnUsrCreate
             // 
+            this.btnUsrCreate.BackColor = System.Drawing.Color.Black;
+            this.btnUsrCreate.ForeColor = System.Drawing.Color.White;
             this.btnUsrCreate.Location = new System.Drawing.Point(95, 179);
             this.btnUsrCreate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUsrCreate.Name = "btnUsrCreate";
-            this.btnUsrCreate.Size = new System.Drawing.Size(56, 19);
+            this.btnUsrCreate.Size = new System.Drawing.Size(56, 29);
             this.btnUsrCreate.TabIndex = 6;
             this.btnUsrCreate.Text = "Create";
-            this.btnUsrCreate.UseVisualStyleBackColor = true;
+            this.btnUsrCreate.UseVisualStyleBackColor = false;
             this.btnUsrCreate.Click += new System.EventHandler(this.btnUsrCreate_Click);
             // 
             // dtpBirthday
@@ -118,6 +120,7 @@
             // lblBirthday
             // 
             this.lblBirthday.AutoSize = true;
+            this.lblBirthday.ForeColor = System.Drawing.Color.White;
             this.lblBirthday.Location = new System.Drawing.Point(9, 160);
             this.lblBirthday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBirthday.Name = "lblBirthday";
@@ -147,6 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(291, 209);
             this.Controls.Add(this.lblUserPhone);
             this.Controls.Add(this.txtUserPhone);
@@ -159,10 +163,12 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblUsrName);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CreateUser";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.CreateUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

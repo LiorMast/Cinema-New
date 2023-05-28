@@ -43,5 +43,10 @@ namespace eShop
         {
 
         }
+
+        private void CreateUser_Load(object sender, EventArgs e)
+        {
+            this.Text = "Create an account";
+        }
     }
 }

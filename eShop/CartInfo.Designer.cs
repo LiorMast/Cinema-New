@@ -36,6 +36,8 @@
             // 
             // lstCartItems
             // 
+            this.lstCartItems.BackColor = System.Drawing.Color.Black;
+            this.lstCartItems.ForeColor = System.Drawing.Color.White;
             this.lstCartItems.FormattingEnabled = true;
             this.lstCartItems.Location = new System.Drawing.Point(12, 12);
             this.lstCartItems.Name = "lstCartItems";
@@ -54,32 +56,36 @@
             // 
             // btnCartRemove
             // 
+            this.btnCartRemove.BackColor = System.Drawing.Color.Black;
             this.btnCartRemove.Location = new System.Drawing.Point(573, 295);
             this.btnCartRemove.Name = "btnCartRemove";
             this.btnCartRemove.Size = new System.Drawing.Size(75, 23);
             this.btnCartRemove.TabIndex = 2;
             this.btnCartRemove.Text = "Remove";
-            this.btnCartRemove.UseVisualStyleBackColor = true;
+            this.btnCartRemove.UseVisualStyleBackColor = false;
             this.btnCartRemove.Click += new System.EventHandler(this.btnCartRemove_Click);
             // 
             // btnCartCheckout
             // 
+            this.btnCartCheckout.BackColor = System.Drawing.Color.Black;
             this.btnCartCheckout.Location = new System.Drawing.Point(573, 427);
             this.btnCartCheckout.Name = "btnCartCheckout";
             this.btnCartCheckout.Size = new System.Drawing.Size(75, 23);
             this.btnCartCheckout.TabIndex = 3;
             this.btnCartCheckout.Text = "Checkout";
-            this.btnCartCheckout.UseVisualStyleBackColor = true;
+            this.btnCartCheckout.UseVisualStyleBackColor = false;
             // 
             // CartInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(660, 462);
             this.Controls.Add(this.btnCartCheckout);
             this.Controls.Add(this.btnCartRemove);
             this.Controls.Add(this.lblCartSummary);
             this.Controls.Add(this.lstCartItems);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "CartInfo";
             this.Text = "CartInfo";
             this.Load += new System.EventHandler(this.CartInfo_Load);

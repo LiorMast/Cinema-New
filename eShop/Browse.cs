@@ -26,6 +26,10 @@ namespace eShop
         public Browse()
         {
             InitializeComponent();
+            this.Text = "Select a movie and screening time";
+            this.btnChooseSeats.BackColor = Color.Black;
+            this.btnShowInfo.BackColor = Color.Black;
+            this.btnViewCart.BackColor = Color.Black;
         }
         public Browse(User activeUser): this()
         {
@@ -109,7 +113,7 @@ namespace eShop
                 CartInfo cartInfo = new CartInfo(activeUser.GetCart());
                 cartInfo.ShowDialog();
                 UpdateUserLabel();
-            }catch (Exception ex)
+            }catch (Exception)
             {
                 MessageBox.Show("Cart is empty!", "Empty cart", MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
             }

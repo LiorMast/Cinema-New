@@ -93,6 +93,7 @@
             this.lblUsrInfo.AutoSize = true;
             this.lblUsrInfo.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblUsrInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lblUsrInfo.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblUsrInfo.Location = new System.Drawing.Point(734, 0);
             this.lblUsrInfo.Name = "lblUsrInfo";
             this.lblUsrInfo.Size = new System.Drawing.Size(66, 24);
@@ -153,6 +154,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMovieName);
@@ -164,6 +166,7 @@
             this.Controls.Add(this.cmbMovies);
             this.Controls.Add(this.lblFeatured);
             this.Controls.Add(this.picFeatured);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "Browse";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);

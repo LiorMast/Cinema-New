@@ -20,6 +20,9 @@ namespace Cinema
         {
             InitializeComponent();
             movies.LoadMovies();
+            lblTitle.ForeColor = Color.Gold;
+            btnCreateAccount.BackColor = Color.Black;
+            this.Text = "Welcome!";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,7 +44,6 @@ namespace Cinema
             {
                 activeUser = usr.GetUser();
                 users.AddUser(activeUser);
-                lblUser1.Text = $"Current User: {activeUser.GetUsername()}";
                 Browse browse = new Browse(activeUser);
                 browse.ShowDialog();
             }catch(Exception)
@@ -57,6 +59,19 @@ namespace Cinema
         {
             Browse frm = new Browse(new User("TESTrrrrrrrrrrrrrrrrrr","TEST@TEST.TEST","1234",new DateTime(1990,1,1), "0500000000"));
             frm.ShowDialog();
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (lblTitle.ForeColor == Color.Gold) lblTitle.ForeColor = Color.White;
+            else if (lblTitle.ForeColor == Color.White) lblTitle.ForeColor = Color.HotPink;
+            else if (lblTitle.ForeColor == Color.HotPink) lblTitle.ForeColor = Color.Cyan;
+            else if (lblTitle.ForeColor == Color.Cyan) lblTitle.ForeColor = Color.Gold;
         }
     }
 }
