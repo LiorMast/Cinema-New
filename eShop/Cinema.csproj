@@ -101,6 +101,9 @@
     <EmbeddedResource Include="CartInfo.resx">
       <DependentUpon>CartInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Checkout.resx">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SeatBooking.resx">
       <DependentUpon>SeatBooking.cs</DependentUpon>
     </EmbeddedResource>

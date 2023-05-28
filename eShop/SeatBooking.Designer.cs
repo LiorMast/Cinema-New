@@ -101,12 +101,12 @@
             // 
             this.btnPurchase.BackColor = System.Drawing.Color.Yellow;
             this.btnPurchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.btnPurchase.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnPurchase.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnPurchase.Location = new System.Drawing.Point(542, 114);
             this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(146, 54);
+            this.btnPurchase.Size = new System.Drawing.Size(161, 54);
             this.btnPurchase.TabIndex = 4;
-            this.btnPurchase.Text = "Purchase";
+            this.btnPurchase.Text = "Add To Cart";
             this.btnPurchase.UseVisualStyleBackColor = false;
             this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
@@ -114,7 +114,7 @@
             // 
             this.btnCancelOrder.BackColor = System.Drawing.Color.IndianRed;
             this.btnCancelOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.btnCancelOrder.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCancelOrder.ForeColor = System.Drawing.Color.White;
             this.btnCancelOrder.Location = new System.Drawing.Point(180, 114);
             this.btnCancelOrder.Name = "btnCancelOrder";
             this.btnCancelOrder.Size = new System.Drawing.Size(139, 54);

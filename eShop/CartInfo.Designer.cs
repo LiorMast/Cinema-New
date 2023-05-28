@@ -74,6 +74,7 @@
             this.btnCartCheckout.TabIndex = 3;
             this.btnCartCheckout.Text = "Checkout";
             this.btnCartCheckout.UseVisualStyleBackColor = false;
+            this.btnCartCheckout.Click += new System.EventHandler(this.btnCartCheckout_Click);
             // 
             // CartInfo
             // 

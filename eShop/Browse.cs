@@ -110,7 +110,7 @@ namespace eShop
         {
             try
             {
-                CartInfo cartInfo = new CartInfo(activeUser.GetCart());
+                CartInfo cartInfo = new CartInfo(activeUser);
                 cartInfo.ShowDialog();
                 UpdateUserLabel();
             }catch (Exception)

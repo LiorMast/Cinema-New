@@ -12,6 +12,7 @@ namespace eShop
 {
     public partial class CartInfo : Form
     {
+        private User activeuser;
         private Cart cart;
         private Item selectedItem;
         public CartInfo()
@@ -19,9 +20,10 @@ namespace eShop
             InitializeComponent();
         }
 
-        public CartInfo(Cart cart) : this()
+        public CartInfo(User user) : this()
         {
-            this.cart = cart;
+            this.activeuser = user;
+            this.cart = user.GetCart();
             UpdateCartList();
             lstCartItems.SelectedIndex = 0;
             UpdateCartSummary();
@@ -63,6 +65,12 @@ namespace eShop
             {
                 MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnCartCheckout_Click(object sender, EventArgs e)
+        {
+            Checkout checkout = new Checkout(activeuser);
+            checkout.ShowDialog();
         }
     }
 }
