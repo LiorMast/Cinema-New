@@ -43,7 +43,7 @@ namespace eShop
             }
         }
 
-        private void UpdateCartSummary()
+        public void UpdateCartSummary()
         {
             lblCartSummary.Text = $"Items in cart: {cart.GetItemCount()}\nTotal: {cart.GetTotalPrice()}";
         }

@@ -35,10 +35,10 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCCN = new System.Windows.Forms.TextBox();
             this.lblCCN = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtExpiration = new System.Windows.Forms.TextBox();
+            this.txtCVV = new System.Windows.Forms.TextBox();
             this.lblExpiration = new System.Windows.Forms.Label();
             this.lblCVV = new System.Windows.Forms.Label();
             this.btnPay = new System.Windows.Forms.Button();
@@ -54,10 +54,10 @@
             this.grpPaymentDetails.Controls.Add(this.lblBrand);
             this.grpPaymentDetails.Controls.Add(this.lblCVV);
             this.grpPaymentDetails.Controls.Add(this.lblExpiration);
-            this.grpPaymentDetails.Controls.Add(this.textBox4);
-            this.grpPaymentDetails.Controls.Add(this.textBox3);
+            this.grpPaymentDetails.Controls.Add(this.txtCVV);
+            this.grpPaymentDetails.Controls.Add(this.txtExpiration);
             this.grpPaymentDetails.Controls.Add(this.lblCCN);
-            this.grpPaymentDetails.Controls.Add(this.textBox2);
+            this.grpPaymentDetails.Controls.Add(this.txtCCN);
             this.grpPaymentDetails.Controls.Add(this.lblPhone);
             this.grpPaymentDetails.Controls.Add(this.txtPhone);
             this.grpPaymentDetails.Controls.Add(this.lblEmail);
@@ -84,14 +84,16 @@
             // 
             this.txtPayer.Location = new System.Drawing.Point(83, 35);
             this.txtPayer.Name = "txtPayer";
-            this.txtPayer.Size = new System.Drawing.Size(100, 20);
+            this.txtPayer.ReadOnly = true;
+            this.txtPayer.Size = new System.Drawing.Size(219, 20);
             this.txtPayer.TabIndex = 1;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(83, 61);
+            this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.Size = new System.Drawing.Size(219, 20);
             this.txtEmail.TabIndex = 2;
             // 
             // lblEmail
@@ -107,7 +109,8 @@
             // 
             this.txtPhone.Location = new System.Drawing.Point(83, 87);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(100, 20);
+            this.txtPhone.ReadOnly = true;
+            this.txtPhone.Size = new System.Drawing.Size(219, 20);
             this.txtPhone.TabIndex = 4;
             // 
             // lblPhone
@@ -119,12 +122,12 @@
             this.lblPhone.TabIndex = 5;
             this.lblPhone.Text = "Phone:";
             // 
-            // textBox2
+            // txtCCN
             // 
-            this.textBox2.Location = new System.Drawing.Point(83, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtCCN.Location = new System.Drawing.Point(83, 143);
+            this.txtCCN.Name = "txtCCN";
+            this.txtCCN.Size = new System.Drawing.Size(219, 20);
+            this.txtCCN.TabIndex = 6;
             // 
             // lblCCN
             // 
@@ -135,19 +138,19 @@
             this.lblCCN.TabIndex = 7;
             this.lblCCN.Text = "Credit Card:";
             // 
-            // textBox3
+            // txtExpiration
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 169);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.txtExpiration.Location = new System.Drawing.Point(83, 169);
+            this.txtExpiration.Name = "txtExpiration";
+            this.txtExpiration.Size = new System.Drawing.Size(219, 20);
+            this.txtExpiration.TabIndex = 8;
             // 
-            // textBox4
+            // txtCVV
             // 
-            this.textBox4.Location = new System.Drawing.Point(83, 195);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtCVV.Location = new System.Drawing.Point(83, 195);
+            this.txtCVV.Name = "txtCVV";
+            this.txtCVV.Size = new System.Drawing.Size(219, 20);
+            this.txtCVV.TabIndex = 9;
             // 
             // lblExpiration
             // 
@@ -175,6 +178,7 @@
             this.btnPay.TabIndex = 1;
             this.btnPay.Text = "Pay";
             this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // lblBrand
             // 
@@ -194,7 +198,7 @@
             "American Express"});
             this.cmbBrand.Location = new System.Drawing.Point(83, 115);
             this.cmbBrand.Name = "cmbBrand";
-            this.cmbBrand.Size = new System.Drawing.Size(100, 21);
+            this.cmbBrand.Size = new System.Drawing.Size(219, 21);
             this.cmbBrand.TabIndex = 13;
             // 
             // lblSummary
@@ -236,11 +240,11 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblCCN;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCCN;
         private System.Windows.Forms.Label lblCVV;
         private System.Windows.Forms.Label lblExpiration;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCVV;
+        private System.Windows.Forms.TextBox txtExpiration;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.ComboBox cmbBrand;
         private System.Windows.Forms.Label lblBrand;
