@@ -40,6 +40,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.grpChooseSeats = new System.Windows.Forms.GroupBox();
             this.pnlChairs = new System.Windows.Forms.TableLayoutPanel();
+            this.lblScreeningInfo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -48,6 +49,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblScreeningInfo);
             this.panel1.Controls.Add(this.lblTicketBooking);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -184,7 +186,7 @@
             this.pnlChairs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.pnlChairs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.pnlChairs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChairs.Location = new System.Drawing.Point(3, 22);
+            this.pnlChairs.Location = new System.Drawing.Point(3, 19);
             this.pnlChairs.Name = "pnlChairs";
             this.pnlChairs.RowCount = 10;
             this.pnlChairs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -197,14 +199,28 @@
             this.pnlChairs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.pnlChairs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.pnlChairs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.pnlChairs.Size = new System.Drawing.Size(965, 360);
+            this.pnlChairs.Size = new System.Drawing.Size(965, 363);
             this.pnlChairs.TabIndex = 0;
             this.pnlChairs.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChairs_Paint);
             // 
+            // lblScreeningInfo
+            // 
+            this.lblScreeningInfo.AutoSize = true;
+            this.lblScreeningInfo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblScreeningInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lblScreeningInfo.ForeColor = System.Drawing.Color.White;
+            this.lblScreeningInfo.Location = new System.Drawing.Point(917, 0);
+            this.lblScreeningInfo.Name = "lblScreeningInfo";
+            this.lblScreeningInfo.Size = new System.Drawing.Size(54, 20);
+            this.lblScreeningInfo.TabIndex = 5;
+            this.lblScreeningInfo.Text = "Movie:";
+            this.lblScreeningInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // SeatBooking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(971, 665);
             this.Controls.Add(this.panel3);
@@ -217,6 +233,7 @@
             this.Text = "Book Seats";
             this.Load += new System.EventHandler(this.SeatBooking_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.grpChooseSeats.ResumeLayout(false);
@@ -238,5 +255,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox grpChooseSeats;
         private System.Windows.Forms.TableLayoutPanel pnlChairs;
+        private System.Windows.Forms.Label lblScreeningInfo;
     }
 }

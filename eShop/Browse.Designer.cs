@@ -35,7 +35,7 @@
             this.cmbMovies = new System.Windows.Forms.ComboBox();
             this.btnShowInfo = new System.Windows.Forms.Button();
             this.lblUsrInfo = new System.Windows.Forms.Label();
-            this.btnAddToCart = new System.Windows.Forms.Button();
+            this.btnChooseSeats = new System.Windows.Forms.Button();
             this.btnViewCart = new System.Windows.Forms.Button();
             this.cmbScreeningTIme = new System.Windows.Forms.ComboBox();
             this.lblMovieName = new System.Windows.Forms.Label();
@@ -100,16 +100,16 @@
             this.lblUsrInfo.Text = "label1";
             this.lblUsrInfo.Click += new System.EventHandler(this.lblUsrInfo_Click);
             // 
-            // btnAddToCart
+            // btnChooseSeats
             // 
-            this.btnAddToCart.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddToCart.Location = new System.Drawing.Point(434, 204);
-            this.btnAddToCart.Name = "btnAddToCart";
-            this.btnAddToCart.Size = new System.Drawing.Size(127, 32);
-            this.btnAddToCart.TabIndex = 5;
-            this.btnAddToCart.Text = "Add To Cart";
-            this.btnAddToCart.UseVisualStyleBackColor = true;
-            this.btnAddToCart.Click += new System.EventHandler(this.btnAddToCart_Click);
+            this.btnChooseSeats.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChooseSeats.Location = new System.Drawing.Point(434, 204);
+            this.btnChooseSeats.Name = "btnChooseSeats";
+            this.btnChooseSeats.Size = new System.Drawing.Size(127, 32);
+            this.btnChooseSeats.TabIndex = 5;
+            this.btnChooseSeats.Text = "Choose Seats";
+            this.btnChooseSeats.UseVisualStyleBackColor = true;
+            this.btnChooseSeats.Click += new System.EventHandler(this.btnAddToCart_Click);
             // 
             // btnViewCart
             // 
@@ -158,7 +158,7 @@
             this.Controls.Add(this.lblMovieName);
             this.Controls.Add(this.cmbScreeningTIme);
             this.Controls.Add(this.btnViewCart);
-            this.Controls.Add(this.btnAddToCart);
+            this.Controls.Add(this.btnChooseSeats);
             this.Controls.Add(this.lblUsrInfo);
             this.Controls.Add(this.btnShowInfo);
             this.Controls.Add(this.cmbMovies);
@@ -181,7 +181,7 @@
         private System.Windows.Forms.ComboBox cmbMovies;
         private System.Windows.Forms.Button btnShowInfo;
         private System.Windows.Forms.Label lblUsrInfo;
-        private System.Windows.Forms.Button btnAddToCart;
+        private System.Windows.Forms.Button btnChooseSeats;
         private System.Windows.Forms.Button btnViewCart;
         private System.Windows.Forms.ComboBox cmbScreeningTIme;
         private System.Windows.Forms.Label lblMovieName;

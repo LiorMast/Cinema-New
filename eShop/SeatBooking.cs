@@ -1,4 +1,5 @@
-﻿using System;
+﻿using eShop;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,20 @@ namespace Cinema
 {
     public partial class SeatBooking : Form
     {
+        Movie movie;
+        Ticket.ScreeningTime screeningTime;
+        private Ticket[] tickets;
+
         public SeatBooking()
         {
             InitializeComponent();
+        }
+
+        public SeatBooking(Movie movie, Ticket.ScreeningTime screeningTime) : this()
+        {
+            this.movie = movie;
+            this.screeningTime = screeningTime;
+            lblScreeningInfo.Text = $"Movie: {movie.GetTitle()}\nTime: {Ticket.ScreeningTimeToString(screeningTime)}";
         }
 
         private void label1_Click(object sender, EventArgs e)

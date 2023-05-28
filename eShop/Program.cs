@@ -18,7 +18,7 @@ namespace Cinema
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new WelcomePage());
-            Application.Run(new SeatBooking());
+            //Application.Run(new SeatBooking());
         }
     }
 }

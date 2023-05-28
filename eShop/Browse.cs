@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Cinema;
 
 namespace eShop
 {
@@ -88,11 +89,12 @@ namespace eShop
 
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
-            //SeatSelectorForm seatSelectorForm = new SeatSelectorForm();
-            //seatSelectorForm.ShowDialog();
+            //Ticket t = new Ticket(selectedMovie, "1", (Ticket.ScreeningTime)cmbScreeningTIme.SelectedIndex, 10.3);
+            //activeUser.GetCart().AddItem(t);
+            //UpdateUserLabel();
 
-            Ticket t = new Ticket(selectedMovie, "1", (Ticket.ScreeningTime)cmbScreeningTIme.SelectedIndex, 10.3);
-            activeUser.GetCart().AddItem(t);
+            SeatBooking seatBooking = new SeatBooking(selectedMovie, (Ticket.ScreeningTime)cmbScreeningTIme.SelectedIndex);
+            seatBooking.ShowDialog();
             UpdateUserLabel();
         }
 

@@ -42,6 +42,8 @@ namespace Cinema
                 activeUser = usr.GetUser();
                 users.AddUser(activeUser);
                 lblUser1.Text = $"Current User: {activeUser.GetUsername()}";
+                Browse browse = new Browse(activeUser);
+                browse.ShowDialog();
             }catch(Exception)
             {
                 MessageBox.Show("Cancelled", "User not created", MessageBoxButtons.OK, MessageBoxIcon.Warning);
