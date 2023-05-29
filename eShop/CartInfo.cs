@@ -71,6 +71,7 @@ namespace eShop
         {
             Checkout checkout = new Checkout(activeuser);
             checkout.ShowDialog();
+            Close();
         }
 
         private void btnCartRemove_MouseEnter(object sender, EventArgs e)

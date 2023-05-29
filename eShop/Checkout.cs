@@ -84,6 +84,7 @@ namespace eShop
                     MessageBox.Show($"Purchase Complete!\nEnjoy Your Movie 😁", "Thank you!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     user.GetCart().ClearCart();
                     lblSummary.Text = $"Items in cart: {user.GetCart().GetItemCount()}\nTotal: {user.GetCart().GetTotalPrice()}";
+                    Close();
                 }
             }
             else
